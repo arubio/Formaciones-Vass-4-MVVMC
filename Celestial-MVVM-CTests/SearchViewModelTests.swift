@@ -22,7 +22,6 @@ class SearchViewModelTests: XCTestCase, SearchNavigationActions, NetProtocol {
     override func setUp() {
         viewModel = ServiceLocator.shared.searchViewModel(navigationDelegate: self, net: self)
         viewModel.viewDidLoad()
-
         
         keyStrokes = ["M", "Ma", "Mar", "Mars"]
         keyStrokesDone = []
@@ -95,11 +94,13 @@ class SearchViewModelTests: XCTestCase, SearchNavigationActions, NetProtocol {
             apiCallCounter += 1
             
             let jsonDecoder = JSONDecoder()
+            
             if resource.url.absoluteString.contains("Mars") {
                 let mappedData = try! jsonDecoder.decode(A.Resource.self, from: searchJSONResultForMars.data(using: .utf8)!)
                 return Observable.just(mappedData).asSingle()
-            } else { return Observable.just(nil).asSingle() }
-            
+            } else {
+                return Observable.just(nil).asSingle()
+            }
         default: fatalError()
         }
     }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Intro'/>
+        <page name='¿Por qué?'/>
+        <page name='Implementación'/>
+        <page name='Testing'/>
+        <page name='Conclusión'/>
+    </pages>
+</playground>
