@@ -18,7 +18,8 @@ final class SearchViewController: BaseViewController<SearchViewModel> {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    override func configViews() {        
+    override func configViews() {
+        searchBar.placeholder = "Mars, Earth, Moon..."
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdent)
     }
     

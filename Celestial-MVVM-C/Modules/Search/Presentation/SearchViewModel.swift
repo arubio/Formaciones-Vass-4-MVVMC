@@ -30,6 +30,7 @@ final class SearchViewModel: ViewModable {
     var searchResults: Observable<[SearchResultItem]> {
         return _searchResults.asObservable()
     }
+    
     var navigationTitle: Observable<String> {
         return _navigationTitle.asObservable()
     }

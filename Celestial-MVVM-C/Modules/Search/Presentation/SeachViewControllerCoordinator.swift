@@ -26,3 +26,4 @@ extension SearchCoordinator: SearchNavigationActions {
         
     }
 }
+

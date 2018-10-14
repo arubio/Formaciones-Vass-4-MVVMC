@@ -2,7 +2,7 @@
 
  # Implementación
  
- MVVM puede verse como una versión de MVC más elaborada. A parte de las nuevas entidades view model y coordinator, la mayor diferencia nos viene con el con el patrón de programación adherido a MVVM, ya que la comunicación entre el modelo y la view se reestructura como un data pipeline (conducto de datos).
+ MVVM puede verse como una versión de MVC más elaborada. A parte de las nuevas entidades view model y coordinator, la mayor diferencia nos viene con el con el patrón de programación adherido a MVVM (reactive progrgamming), ya que la comunicación entre el modelo y la view se reestructura como un data pipeline (conducto de datos).
  
  La programación reactiva construye este conducto de datos usando una serie de etapas de transformación. Esto puede parecer muy diferente a como acostumbramos a estructurar nuestra lógica usando los estamentos básicos de control de flujo de Swift (loops, condiciones, llamadas a métodos, etc.).
  
