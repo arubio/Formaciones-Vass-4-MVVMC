@@ -44,7 +44,7 @@ final class SearchViewController: BaseViewController<SearchViewModel> {
         
         tableView.rx
             .itemSelected
-            .subscribe(onNext: { [unowned self] indexPath in
+            .subscribe(onNext: { indexPath in
                 self.viewModel.didSelectItem(at: indexPath.row)
             })
             .disposed(by: disposeBag)
