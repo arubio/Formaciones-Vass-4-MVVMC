@@ -30,4 +30,12 @@ final class ServiceLocator {
         
         return SearchViewModel(coordinator: navigationDelegate, netProvider: net)
     }
+    
+    func searchDetailViewModel(text: String) -> SearchDetailViewModel {
+        return .init(text: text)
+    }
+    
+    func searchDetailViewController(text: String) -> SearchDetail {
+        return .init(viewModel: searchDetailViewModel(text: text), nibName: "SearchDetail")
+    }
 }

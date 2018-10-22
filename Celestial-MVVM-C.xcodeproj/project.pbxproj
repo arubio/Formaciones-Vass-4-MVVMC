@@ -11,6 +11,9 @@
 		5458277B2164C8E70081EB11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5458277A2164C8E70081EB11 /* Assets.xcassets */; };
 		5458277E2164C8E70081EB11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5458277C2164C8E70081EB11 /* LaunchScreen.storyboard */; };
 		545827892164C8E70081EB11 /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545827882164C8E70081EB11 /* SearchViewModelTests.swift */; };
+		54620CCD2175FAE800711B2E /* SearchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54620CCC2175FAE800711B2E /* SearchDetail.swift */; };
+		54620CD02175FAFE00711B2E /* SearchDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54620CCF2175FAFE00711B2E /* SearchDetail.xib */; };
+		54620CD22175FB6400711B2E /* SearchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54620CD12175FB6400711B2E /* SearchDetailViewModel.swift */; };
 		54F1F2B4216657280045ADAF /* SearchJSONResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F1F2B3216657280045ADAF /* SearchJSONResult.swift */; };
 		54F7DC212165802D00769B4D /* ViewModable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7DC202165802D00769B4D /* ViewModable.swift */; };
 		54F7DC232165803A00769B4D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7DC222165803A00769B4D /* BaseViewController.swift */; };
@@ -48,6 +51,9 @@
 		545827842164C8E70081EB11 /* Celestial-MVVM-CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Celestial-MVVM-CTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		545827882164C8E70081EB11 /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
 		5458278A2164C8E70081EB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54620CCC2175FAE800711B2E /* SearchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetail.swift; sourceTree = "<group>"; };
+		54620CCF2175FAFE00711B2E /* SearchDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchDetail.xib; sourceTree = "<group>"; };
+		54620CD12175FB6400711B2E /* SearchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewModel.swift; sourceTree = "<group>"; };
 		54F1F2B3216657280045ADAF /* SearchJSONResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchJSONResult.swift; sourceTree = "<group>"; };
 		54F7DC202165802D00769B4D /* ViewModable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModable.swift; sourceTree = "<group>"; };
 		54F7DC222165803A00769B4D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +133,16 @@
 			path = "Celestial-MVVM-CTests";
 			sourceTree = "<group>";
 		};
+		54620CCE2175FAEF00711B2E /* SearchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				54620CCC2175FAE800711B2E /* SearchDetail.swift */,
+				54620CCF2175FAFE00711B2E /* SearchDetail.xib */,
+				54620CD12175FB6400711B2E /* SearchDetailViewModel.swift */,
+			);
+			path = SearchDetail;
+			sourceTree = "<group>";
+		};
 		54F1F2B22166571B0045ADAF /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +190,7 @@
 		54F7DC2A2165933900769B4D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				54620CCE2175FAEF00711B2E /* SearchDetail */,
 				54F7DC2B2165935800769B4D /* Search */,
 			);
 			path = Modules;
@@ -324,6 +341,7 @@
 			files = (
 				5458277E2164C8E70081EB11 /* LaunchScreen.storyboard in Resources */,
 				5458277B2164C8E70081EB11 /* Assets.xcassets in Resources */,
+				54620CD02175FAFE00711B2E /* SearchDetail.xib in Resources */,
 				54F7DC3E2166144600769B4D /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +467,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				54F7DC3921659A0800769B4D /* SeachViewControllerCoordinator.swift in Sources */,
+				54620CCD2175FAE800711B2E /* SearchDetail.swift in Sources */,
 				54F7DC2D2165939000769B4D /* SearchResource.swift in Sources */,
+				54620CD22175FB6400711B2E /* SearchDetailViewModel.swift in Sources */,
 				54F7DC3B2165A10100769B4D /* ServiceLocator.swift in Sources */,
 				54F7DC352165994800769B4D /* SearchViewModel.swift in Sources */,
 				54F7DC37216599A600769B4D /* SearchViewController.swift in Sources */,

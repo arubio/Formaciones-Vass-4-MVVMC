@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 protocol SearchNavigationActions: class {
-    func didSelect(_ item: SearchResultItem)
+    func didSelect(_ item: Int)
 }
 
 final class SearchViewModel: ViewModable {
@@ -58,6 +58,6 @@ final class SearchViewModel: ViewModable {
     }
     
     func didSelectItem(at index: Int) {
-        
+        coordinator?.didSelect(index)
     }
 }

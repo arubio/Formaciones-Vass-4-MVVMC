@@ -14,6 +14,7 @@ import RxSwift
 class SearchViewModelTests: XCTestCase, SearchNavigationActions, NetProtocol {
     var viewModel: SearchViewModel!
     let disposeBag = DisposeBag()
+    var presentedDetailScreenCounter: Bool = false
 
     var apiCallCounter = 0
     var keyStrokes: [String]!
@@ -69,6 +70,12 @@ class SearchViewModelTests: XCTestCase, SearchNavigationActions, NetProtocol {
         }).disposed(by: disposeBag)
     }
     
+    func testNavigagtionWorks() {
+        viewModel.didSelectItem(at: 1)
+        
+        XCTAssert(presentedDetailScreenCounter == true)
+    }
+    
     // MARK: Private helpers
     
     private func beginTyping() {
@@ -81,8 +88,8 @@ class SearchViewModelTests: XCTestCase, SearchNavigationActions, NetProtocol {
     
     // MARK: Navigation delegate
 
-    func didSelect(_ item: SearchResultItem) {
-        
+    func didSelect(_ item: Int) {
+        presentedDetailScreenCounter = true
     }
     
     // MARK: Net protocol

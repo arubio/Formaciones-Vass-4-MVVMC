@@ -22,8 +22,9 @@ final class SearchCoordinator {
 }
 
 extension SearchCoordinator: SearchNavigationActions {
-    func didSelect(_ item: SearchResultItem) {
-        
+    func didSelect(_ item: Int) {
+        let searchDetail = ServiceLocator.shared.searchDetailViewController(text: String(item))
+        navigationController.pushViewController(searchDetail, animated: true)
     }
 }
 
